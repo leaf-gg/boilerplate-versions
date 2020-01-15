@@ -1,14 +1,16 @@
-# Personal Boilerplate using several pre-processors with gulp 1.0
+# Personal Boilerplate using several pre-processors 1.0
 
 **Features:**
 
- - compressed and minified JS and CSS files;
+ - Compressed and minified JS and CSS files;
+ - Pre-processor SASS included in the branch master.
 
 **How to use?**
 	
     npm i
 
-Will install all dependencies, then:
+**After all dependencies loaded, what i do?**
 
     gulp
+
 
