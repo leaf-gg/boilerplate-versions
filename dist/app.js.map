@@ -1,0 +1,1 @@
+{"version":3,"sources":["z.initialize.js"],"names":["init","window","onload"],"mappings":"AACA,SAAAA,QAMAC,OAAAC,OAAAF","file":"app.js","sourcesContent":["\r\nfunction init() {\r\n \t//put your custom functions here\r\n \t\r\n}\r\n\r\n// window load binds \r\nwindow.onload = init;"]}
