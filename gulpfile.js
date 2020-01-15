@@ -1,5 +1,5 @@
 const gulp = require('gulp'),
-sass = require('gulp-sass'),
+stylus = require('gulp-stylus'),
 concat = require('gulp-concat'),
 prefixes = require('autoprefixer'),
 cssnano = require('cssnano'),
@@ -13,8 +13,8 @@ const config = {
             },
 
         css : {
-            src: 'src/scss/main.scss',
-            watch: 'src/scss/**/*.scss'
+            src: 'src/stylus/main.styl',
+            watch: 'src/scss/**/*.styl'
 
         },
             dist: 'dist',
@@ -26,8 +26,8 @@ const config = {
         };
 
         gulp.task('css', () => {
-            return gulp.src('src/scss/*.scss')
-            .pipe(sass())
+            return gulp.src('src/stylus/*.styl')
+            .pipe(stylus())
             .pipe(sourcemaps.init())
             .pipe(postcss(config.postCSSModules))
             .pipe(sourcemaps.write('.'))
