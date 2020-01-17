@@ -3,7 +3,9 @@
 **Features:**
 
  - Compressed and minified JS and CSS files;
- - Pre-processor SASS included in the branch master.
+ - Pre-processor SASS, LESS and Stylus separated per branches.
+
+**First of all, select your branch: Sass, Less or Stylus and clone the repo**
 
 **How to use?**
 	
