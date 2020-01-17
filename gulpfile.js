@@ -1,5 +1,5 @@
 const gulp = require('gulp'),
-less = require('gulp-less'),
+sass = require('gulp-sass'),
 concat = require('gulp-concat'),
 prefixes = require('autoprefixer'),
 cssnano = require('cssnano'),
@@ -13,8 +13,8 @@ const config = {
             },
 
         css : {
-            src: 'src/less/main.less',
-            watch: 'src/less/**/*.less'
+            src: 'src/scss/main.scss',
+            watch: 'src/scss/**/*.scss'
 
         },
             dist: 'dist',
@@ -26,8 +26,8 @@ const config = {
         };
 
         gulp.task('css', () => {
-            return gulp.src('src/less/*.less')
-            .pipe(less())
+            return gulp.src('src/scss/*.scss')
+            .pipe(sass())
             .pipe(sourcemaps.init())
             .pipe(postcss(config.postCSSModules))
             .pipe(sourcemaps.write('.'))
